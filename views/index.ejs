@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO Clone</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">HODLINFO</div>
+        <div class="ticker">
+            <span>BTC/INR</span>
+            <span class="best-price">₹ <%= tickers[0].last %></span>
+        </div>
+        <button class="connect-telegram">Connect Telegram</button>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Volume</th>
+                    <th>Base Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% tickers.forEach((ticker, index) => { %>
+                    <tr>
+                        <td><%= index + 1 %></td>
+                        <td><%= ticker.name %></td>
+                        <td>₹ <%= ticker.last %></td>
+                        <td>₹ <%= ticker.buy %> / ₹ <%= ticker.sell %></td>
+                        <td><%= ticker.volume %></td>
+                        <td><%= ticker.base_unit %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Powered by WazirX</p>
+    </footer>
+</body>
+</html>

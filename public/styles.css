@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #191d28;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2e3241;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ticker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3dc6c1;
+}
+
+.connect-telegram {
+    background-color: #3dc6c1;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #2e3241;
+}
+
+th {
+    background-color: #2e3241;
+}
+
+tr:nth-child(even) {
+    background-color: #1f2330;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e3241;
+}
